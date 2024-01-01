@@ -1,0 +1,39 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background: gray;
+    color: black;
+    font-weight: 500;
+    font-size:16px ;
+}
+.tasks{
+    margin-top: 1%;
+    width: 100%;
+    border: "5px solid";
+}
+.creatTask{
+    border: 2px solid #333;
+    width: 150px;
+    height: 110px;
+    text-align: center;
+}
+.creatTask h5{
+    text-align: center;
+    background:gray;
+    height: 30px;
+}
+.iconDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    background: lightgray;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}

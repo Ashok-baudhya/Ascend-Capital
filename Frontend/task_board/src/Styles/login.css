@@ -1,0 +1,180 @@
+.login {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: url('../Images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .login-container {
+    width: 30%;
+    padding:3% 5%;
+    border-radius: 10px;
+    background-color: #011a39;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  
+  }
+  
+  /* login heading */
+  #text {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    font-style: oblique;
+    
+  }
+  
+  
+  /* form group */
+  .login-form-group {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  
+  .user, .password {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 3px solid rgb(0, 119, 255);
+    gap: 5%;
+    padding: 5px 20px 5px 15px;
+    border-radius: 10px;
+    margin-top: 8%;
+  }
+  
+  /* input */
+  .login-input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border: none;
+    overflow: hidden;
+    background: transparent;
+    color: #ffff;
+  }
+  
+  .login-input::placeholder {
+    font-style: italic;
+  }
+  
+  /* input focus and active */
+  .login-input:focus, .login-input:active {
+    outline: none;
+  }
+  
+  
+  /* password */
+  .login-password-group {
+    width: 105%;
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  
+  /* hide show password icon */
+  .login-toggle-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: aqua;
+  }
+  
+  /* login button */
+  #loginButton {
+    width: 104%;
+    margin-top: 2%;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: 10px solid #007bff;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* error message  */
+  .error-message {
+    color: rgb(245, 60, 60);
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  #account_message {
+    margin-top: 5%;
+    text-align: center;
+    color: gray;
+  }
+  
+  #account_message span {
+    color: #007bff;
+    cursor: pointer;
+  
+  }
+  
+  #account_message span:hover {
+    color: tomato;
+    
+  }
+  
+  
+  .login-form{
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  @media (max-width: 480px) {
+    .login-container {
+      width: 80%;
+    }
+  
+    .login-form-group {
+      margin-bottom: 15px;
+    }
+  
+    .user, .password {
+      width: 90%;
+    }
+  
+    .login-input {
+  
+      font-size: 1rem;
+      padding: 8px 0;
+    }
+  
+    #loginButton {
+        
+      width: 98%;
+      font-size: 1rem;
+      padding: 8px 0px;
+      
+    }
+  }
+  
+  /* Medium Screen */
+  @media (min-width: 481px) and (max-width: 1023px) {
+    .login-container {
+      width: 70%;
+    }
+  }
+  
+  /* Large Screen */
+  @media (min-width: 1024px) {
+    .login-container {
+      width: 30%;
+    }
+  }

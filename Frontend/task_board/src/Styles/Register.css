@@ -1,0 +1,209 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+  }
+  
+  h2{
+    text-align: center;
+    padding-bottom: 2%;
+  
+    letter-spacing: 1.5px;
+    font-style: italic;
+   
+  }
+  
+  
+  /* Registration parent container */
+  .registration-main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/941/847/original/cosmetic-background-for-product-branding-and-packaging-presentation-geometry-form-circle-molding-on-podium-stage-with-shadow-of-leaf-background-design-eps10-vector.jpg");
+    
+  }
+  /* registration child container */
+  .registration-container {
+    width: 50%;
+    padding: 2% 5%;
+    background-color: #fff;
+    background:rgba(1, 61, 85, 0.359);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 4px;
+    color: rgb(10, 237, 237);
+   
+  }
+  
+  /* form parent container */
+  
+  .form_flex {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 3%;
+    box-sizing: border-box;
+    
+    
+  }
+  
+  /* form  group for input and label and select */
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* password group */
+  .password-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background:rgba(1, 61, 85, 0.359);
+  }
+  /* toggle icons */
+  .toggle-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  /* labels and inputs */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input_field,
+  .select_field {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px solid #ccc;
+    border-radius: 4px;
+    transition: border-bottom;
+    background:rgba(1, 61, 85, 0.359);
+    color: #fff;
+    
+  }
+  
+  /* Error maessage */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    
+  }
+  
+  /* Submit button */
+  #submit-utton {
+    width: 20%;
+    margin-top: 4%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1.5% 5%;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .have-an-account{
+    display: flex;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+  }
+  .have-an-account strong{
+    font-style: italic;
+    color: rgb(255, 242, 0);
+    cursor: pointer;
+  }
+  .have-an-account strong:hover{
+    
+    color: red;
+  }
+  .input_field:focus, .select_field:focus,
+      .input_field:active,.select_field:active {
+        border:none;
+        outline: none;
+        border-bottom: 3px solid rgb(227, 239, 5);
+        transition-duration: 3s;
+      }
+  
+  
+  
+  /*  Breakpoints for all screens  (meadia query) */
+  
+  /*  Small screens */
+  @media screen and (max-width: 576px) {
+    .registration-main-container{
+        height:auto;
+        padding-bottom: 5%;
+      }
+    .registration-container {
+        width: 80%;
+        padding: 4%;
+        margin-top: 5%;
+       
+      
+    }
+    .form_flex {
+        flex-wrap: wrap;
+      }
+     #submit-utton{
+        width: 50%;
+  
+    }
+  }
+  
+  
+  /* Medium screens 768px */
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+  .registration-main-container{
+    height:auto;
+    
+  }
+    .registration-container {
+      width: 70%;
+      padding: 3%;
+    }
+    
+    .form_flex {
+      gap: 3%;
+      margin-top: 4%;
+    }
+    #submit-utton{
+        width: 30%;
+  
+    }
+  }
+  
+  /* Large screens */
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+  .registration-main-container{
+    /* margin-top: 10%; */
+  }
+    .registration-container {
+      width: 60%;
+      padding: 3%;
+    }
+    
+    .form_flex {
+      gap: 3%;
+      margin-top: 4%;
+    }
+    #submit-utton{
+        width: 30%;
+  
+    }
+  }

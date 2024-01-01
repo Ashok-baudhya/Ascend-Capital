@@ -1,0 +1,6 @@
+.t1{
+    display: flex;
+    justify-content: start;
+    justify-content: center;
+    gap: 10px;
+}

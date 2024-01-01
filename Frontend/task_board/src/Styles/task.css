@@ -1,0 +1,46 @@
+.taskCom{
+    
+    width: 300px;
+    margin: auto;
+    margin-top: 2%;
+    height: 250px;
+    border-radius: 10px;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.head{
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background: lightgray;
+}
+.name{
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 5%;
+    height: 30px;
+
+}
+.butt{
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.bt1,.bt2{
+    background: green;
+    width: 40%;
+    height: 30px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bt2{
+    background: tomato;
+}
